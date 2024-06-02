@@ -1,0 +1,78 @@
+/* Tested in Firefox 123 and Chrome 124 */
+
+/* Ensure everything has the same font */
+body,
+input,
+select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+/* Style the form */
+form {
+  padding: 0.5rem;
+  /* Use border-box sizing to set width ignoring padding/border */
+  box-sizing: border-box;
+  /* Align form to the left of the page */
+  margin: left;
+  /* Never be wider than the space available */
+  max-width: 100%;
+}
+
+/* An element with class="form-group" containing a label and associated input */
+.form-group {
+  /* Display each label + input on their own line */
+  display: block;
+  /* Spacing between label and input*/
+  margin: 0.5rem;
+}
+
+/* A <label> element inside an element with class="form-group" */
+.form-group label, select, input {
+  /* Display labels inline with inputs */
+  display: inline-block;
+  /* Use border-box sizing to set width ignoring padding/border */
+  box-sizing: border-box;
+  /* Set a minimum width to keep labels and inputs in line vertically */
+  min-width: 20rem;
+  /* Never be wider than the space available */
+  max-width: 100%;
+}
+
+/* Styling for all buttons */
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two buttons alongside one another */
+  grid-gap: 10px; /* Spacing between buttons */
+}
+
+button {
+  padding: 10px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#club-event-form button[type="submit"] {
+  background-color: white;
+}
+
+#back {
+  background-color: #f1f1f1;
+  border-color: black;
+}
+
+button:hover {
+  border-width: 2px;
+}
+
+/* Respond to smaller screens */
+@media only screen and (max-width: 375px) {  
+  /* Set to type block so that elements (label + input) appear on top, rather than beneath each other */
+  .form-group label, select, input {
+    /* Display labels above inputs */
+    display: block;
+    min-width: 0; /* Reset min-width so that labels take up full space when appearing one on top of the other */
+  }
+}

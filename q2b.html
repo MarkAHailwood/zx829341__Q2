@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Add club event</title>
+    <meta name="author" content="Mark Hailwood">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="q2b.css">
+  </head>
+  <body>
+    <h1 id="heading">Add club event</h1>
+
+    <!-- form to capture club event data -->
+    <form id="club-event-form" action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">	
+      <input type="hidden" id="SessionIdentifier" name="SessionIdentifier" value="ff53-dd45-dcba9876-9090">
+	  <div class="form-group">
+	  <label for="name">Name: </label>
+	  <input type="text" id="name" name="name"><br><br>	
+	  </div>
+	  
+	  <div class="form-group">
+	  <label for="rideType">Ride Type: </label>
+      <select id="rideType" name="rideType">
+		  <option value="road">Road</option>
+		  <option value="cycloCross">Cyclo Cross</option>
+		  <option value="moutainBike">Mountain Bike</option>
+		  <option value="race">Race</option>
+      </select><br><br>
+	  </div>
+	  
+	  <div class="form-group">
+      <label for="date">Date: </label>
+	  <input type="date" id="date" name="date"><br><br>
+	  </div>
+	  
+	  <div class="form-group">
+	  <label for="start">Start: </label>
+	  <input type="time" id="start" name="start"><br><br>
+	  </div>
+	 
+	  <div class="form-group">
+	  <label for="duration">Duration: </label>
+	  <input type="text" id="duration" name="duration"><br><br>
+      </div>
+	 
+	  <div class="form-group">
+	  <label for="meetingPoint">Meeting Point: </label>
+	  <input type="text" id="meetingPoint" name="meetingPoint"><br><br>
+	  </div>
+	  
+	  <div class="form-group">
+	  <label for="distance">Distance: </label>
+	  <input type="text" id="distance" name="distance"> km<br><br>
+	  </div>
+	  
+	  <div class="form-group">
+	  <label for="elevation">Elevation: </label>
+	  <input type="text" id="elevation" name="elevation"> m<br><br>
+	  </div>
+	  
+	  <div class="form-group">
+	  <label for="maxGroupSize">Max Group Size: </label>
+	  <input type="text" id="maxGroupSize" name="maxGroupSize"><br><br>
+	  </div>
+	  
+	  <div class="form-group">
+	  <label for="leader">Leader: </label>
+	  <input type="text" id="leader" name="leader" ><br><br>	
+	  </div>
+	  
+	  <div class="form-group">
+	  <label for="contactNumber">Contact Number: </label>
+	  <input type="text" id="contactNumber" name="contactNumber"><br><br>
+	  </div>
+	  
+	  <div class="form-group">
+	  <label for="contactNumber">Alternative Contact Number: </label>
+	  <input type="text" id="alternativeContactNumber" name="alternativeContactNumber"><br><br>
+	  </div>
+	  
+	  <div class="form-group">
+	  <label for="status">Status: </label>
+	  <select id="status" name="status">
+		  <option value="proposed">Proposed</option>
+		  <option value="approved">Approved</option>
+		  <option value="rejected">Rejected</option>
+      </select><br><br>
+	  </div>
+	  
+	  <div class="form-group">
+	  <label for="comments">Comments: </label>
+	  <input type="text" id="comments" name="comments" ><br><br>
+	  </div>
+	  <div class="buttons">
+      <button type="submit" value="submit">Save</button>
+	  <button type="button" id="back">Back</button>
+	  </div>	
+    </form>
+  </body>
+</html>
